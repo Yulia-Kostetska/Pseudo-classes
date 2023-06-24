@@ -1,0 +1,17 @@
+table{
+  width: 70%;
+  border: 3px solid blue;
+  border-collapse: separate;
+  border-spacing: 12px;
+  margin: auto;
+}
+th,
+td{
+  border: 3px solid grey;
+}
+td{
+vertical-align: bottom;
+}
+p{
+  margin: 0;
+}
