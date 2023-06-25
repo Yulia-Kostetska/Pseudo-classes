@@ -14,10 +14,11 @@ body{
 
 table{
   width: 70%;
-  min-width: 600px;
+  min-width: 800px;
+  max-width: 1600;
   border: 3px solid blue;
   border-collapse: collapse;
-  border-spacing: 12px;
+  border-spacing: 20px;
   margin: 50px auto;
 }
 th{
@@ -58,22 +59,43 @@ tbody>tr:last-child>td:last-child{
 }
 tbody>tr>td:nth-child(1){
   text-align: left;
-  padding-left: 25px;
+  padding-left: 20px;
 }
 tbody>tr{
   height: 48px;
   text-align: center;
 }
-
+tbody>tr:last-child>td{
+  height: 60px;
+  padding-bottom: 18px;
+}
+tbody>tr:nth-child(odd)>td:nth-child(even),
+tbody>tr:nth-child(even)>td:nth-child(odd){
+  background-color:rgb(241, 241, 241)
+}
+tbody>tr:nth-child(even)>td:nth-child(even),
+tbody>tr:nth-child(odd)>td:nth-child(odd){
+  background-color:rgb(218, 218, 218) ;
+}
+tbody>tr:nth-child(even)>td:nth-child(even),
+tbody>tr:nth-child(2n+2)>td:nth-child(2n+2){
+  background-color:rgb(224, 224, 224)
+}
+tbody>r:last-child>td>button{
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 4px 8px;
+  border: 1px solid grey;
+}
+  
 
 span{
   font-size: 1.8rem;
 }
 
-th,
-td{
-  border: 3px solid grey;
-}
 td{
   width: 20%;
 vertical-align: bottom;
